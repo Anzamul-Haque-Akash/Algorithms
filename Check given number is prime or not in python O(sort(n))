@@ -1,0 +1,22 @@
+import math
+def isPrime(num): #prime check function.
+    if num == 1:
+        return False
+    else:
+        temp1 = math.ceil(math.sqrt(num))+1
+
+        while temp1 >= 2 and temp1 < num:
+            if num % temp1 == 0:
+                return False
+            temp1 -= 1
+        return True
+
+t = int(input("Enter the query number : "))
+while t:
+    var = int(input("Enter a number : "))
+    if isPrime(var) == True:
+            print("Yes", var, "is a prime number.")
+    else:
+        print("No", var, "is not a prime number.")
+    t=t-1;
+
