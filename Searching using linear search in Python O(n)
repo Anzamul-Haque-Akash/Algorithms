@@ -1,0 +1,17 @@
+arr = list()
+n = int(input("Enter the list size : "))
+for i in range(n):
+    data = input("Enter your ID : ")
+    arr.append(data)
+
+id = input("Enter the ID witch one you want to scarch in the list : ")
+condition = True
+for i in range(n):
+    if arr[i] == id:
+        print (id,"is in the list.")
+        condition = False
+        break
+
+if condition:
+    print(id, "not in the list.")
+
