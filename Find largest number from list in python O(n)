@@ -1,0 +1,12 @@
+numbers = []
+n = int(input('Enter the size of the list : '))
+for i in range(n):
+    data = int(input('Input : '))
+    numbers.append(data)
+
+MAX = int(0)
+for i in range(n):
+    if MAX < numbers[i]:
+        MAX = numbers[i]
+
+print(f'Maximum number in the list is {MAX}.')
