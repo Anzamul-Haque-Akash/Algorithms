@@ -1,0 +1,22 @@
+n = int(input("Enter the numebr of row : "))
+m = int(input("Enter the numebr of col : "))
+
+matrix = []
+
+for i in range(0, n): # it's run 0 to n-1.
+    matrix.append([]) # n blank lists are created.
+
+for i in range(0, n):
+    for j in range(0, m):
+        data = int(input('Enter data : ')) # input data from user and append in to 2d list.
+        matrix[i].append(data)
+
+
+for i in range(0, n):
+    for j in range(0, m):
+        print(matrix[i][j] ," ", end = '') # print 2d list
+    print('\n')
+
+
+
+
