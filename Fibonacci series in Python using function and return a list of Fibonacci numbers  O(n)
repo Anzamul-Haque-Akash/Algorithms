@@ -1,0 +1,24 @@
+def fibonacci(n):
+    list = []
+    first = int(1)
+    second = int(1)
+
+    list.append(first)
+    list.append(second)
+
+    for i in range(n - 2):
+        temp = int(first + second)
+
+        list.append(temp)
+
+        first = second
+        second = temp
+
+    return list
+
+n = int(input("Enter the range number of fibo : "))
+list = []
+list = fibonacci(n)
+
+print(list)
+
