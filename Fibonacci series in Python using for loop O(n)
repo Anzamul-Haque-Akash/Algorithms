@@ -1,0 +1,12 @@
+n = int(input("Enter the range number of fibo : "))
+
+first = int(1)
+second = int(1)
+
+print(first, + second, end = ' ')
+for i in range(n-2):
+    temp = int(first+second)
+    print(temp, end = ' ')
+
+    first = second
+    second = temp
