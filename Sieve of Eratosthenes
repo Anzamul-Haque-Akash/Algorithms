@@ -1,0 +1,23 @@
+primes = []
+def sieve():
+    n = 10000001
+    for i in range(0, n):
+        primes.append(True)
+
+    primes[0] = False
+    primes[1] = False
+
+    for i in range(2, n):
+        if primes[i] == True:
+            for j in range(i*i, n, i):
+                primes[j] = False
+
+sieve()
+t = int(input())
+while t:
+    t-=1
+    n = int(input("Enter a number : "))
+    if primes[n] == True:
+        print(f"{n} is a prime number.")
+    else:
+        print(f"{n} is not a prime number.")
