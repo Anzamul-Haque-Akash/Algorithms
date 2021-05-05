@@ -1,0 +1,18 @@
+t = int(input())
+#Euclid Algorithm in log n time.
+def gcd(a, b):
+    if a == 0:
+        return b
+    return gcd(b%a, b)
+def lcm(a, b):
+    pro = a*b
+    GCD = gcd(a, b)
+
+    return pro//GCD
+
+while t:
+    t-=1
+
+    n, m = map(int,input().split())
+
+    print(f"GCD {gcd(n, m)}\nLCM {lcm(n, m)}")
