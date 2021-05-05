@@ -1,0 +1,13 @@
+t = int(input())
+
+def sum(n):
+    return n*(n+1)//2
+
+while t:
+    t -= 1
+
+    n = int(input())
+    ans = sum(n)
+
+    print(f"Ans is : {ans}")
+    
