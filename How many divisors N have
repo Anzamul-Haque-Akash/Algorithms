@@ -1,0 +1,21 @@
+import math
+from math import *
+t = int(input())
+#time root n
+def fun(n):
+    div = set()
+    for i in range(1,int(math.sqrt(n)+1)):
+        if n%i == 0:
+            div.add(i)
+            div.add(n//2)
+
+    return list(div)
+
+while t:
+    t-=1
+    n = int(input("Enter a number : "))
+    div = fun(n)
+    div.sort()
+    print(*div)
+
+    div.clear()
