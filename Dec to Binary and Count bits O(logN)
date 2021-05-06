@@ -1,0 +1,18 @@
+#Count bits O(logN)
+def dec_to_bin(n):
+    s = str(bin(n))[2:]
+    return s
+
+def countBits(n):
+    count=0
+    while n:
+        count+=1
+        n = n & (n-1)
+    return count
+
+t = int(input())
+while t:
+    t-=1
+    n = int(input("Enter a number : "))
+    print(dec_to_bin(n))
+    print(countBits(n))
