@@ -1,0 +1,10 @@
+def EvenOdd(n):
+    if n & 1 == 0:
+        print("Even number.")
+    else:
+        print("Odd number.")
+t = int(input())
+while t:
+    t-=1
+    n = int(input("Enter a number  : "))
+    EvenOdd(n)
