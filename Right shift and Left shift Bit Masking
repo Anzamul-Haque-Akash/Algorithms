@@ -1,0 +1,14 @@
+#right shift and left shift.
+# >> -> n // (2**x)
+# << -> n * (2**x)
+def rightShift(n, x):
+    return n >> x
+def leftShift(n, x):
+    return n << x
+
+t = int(input())
+while t:
+    t-=1
+    n, x = map(int,input('Enter two number : ').split())
+    print(f'Right Shift = {rightShift(n, x)}')
+    print(f'Left Shift = {leftShift(n, x)}')
