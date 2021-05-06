@@ -1,0 +1,13 @@
+#Power of 2 or not in O(1)
+def isPowerOf2(n):
+    if n <= 0:
+        return False
+    x = n
+    y = not(n & (n-1))
+    return x and y
+
+t = int(input())
+while t:
+    t-=1
+    n = int(input("Enter a number : "))
+    print(isPowerOf2(n))
